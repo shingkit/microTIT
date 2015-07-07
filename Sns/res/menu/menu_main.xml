@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+ 
+    <item
+        android:id="@+id/menu_item_main_msg"
+        android:icon="@drawable/ic_email_white_24dp"
+        android:title="消息"
+        app:showAsAction="always">
+    </item>
+    <item android:id="@+id/menu_item_main_logout"
+        android:title="注销"
+        app:showAsAction="never"/>
+ 	<item android:id="@+id/menu_item_main_about"
+        android:title="关于"
+        app:showAsAction="never"/>
+</menu>

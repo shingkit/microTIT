@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/selector_post"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.gyxy.sns.ui.widget.BezelImageView
+        android:id="@+id/biv_head"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/head"
+        android:src="@drawable/person_image_empty"
+        app:maskDrawable="@drawable/circle_mask" />
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_alignTop="@id/biv_head"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:textColor="@android:color/black"
+        android:layout_toEndOf="@+id/biv_head"
+        android:layout_toRightOf="@+id/biv_head"
+        android:gravity="center_vertical"
+        android:text="@string/username" />
+    
+    <TextView
+        android:id="@+id/tv_createdAt"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/biv_head"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@+id/biv_head"
+        android:layout_toRightOf="@+id/biv_head"
+        android:gravity="center_vertical"
+        android:text="时间" />
+
+    <include
+        android:id="@+id/separator"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:visibility="gone"
+        android:layout_alignLeft="@+id/tv_username"
+        android:layout_alignStart="@+id/tv_username"
+        android:layout_below="@id/biv_head"
+        layout="@layout/separator" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:textColor="@android:color/black"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/separator"
+        android:layout_marginTop="8dp"
+        android:text="@string/content"
+        android:textSize="18sp"  />
+
+    
+
+</RelativeLayout>

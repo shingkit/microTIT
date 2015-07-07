@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout 
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent">
+        
+        
+ 
+    <EditText
+        android:layout_margin="5dp"
+        android:id="@+id/et_title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textColor="#000000"
+        android:background="@drawable/selector_edittext"
+        android:ems="10"
+        android:hint="@string/title" >
+
+        <requestFocus />
+    </EditText>
+
+ 
+
+    <EditText
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/et_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_title"
+        android:textColor="#000000"
+		android:minLines="8"
+        android:background="@drawable/selector_edittext"
+		android:gravity="top|start"
+        android:hint="正文" />
+
+    <RelativeLayout
+        android:id="@+id/pic_content"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" 
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_pic_edit"
+        android:paddingTop="8dp" >
+
+        <View
+            android:id="@+id/view_helper"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:background="#00000000" />
+
+        <LinearLayout
+            android:id="@+id/ll_select_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@id/view_helper"
+            android:background="@drawable/selector_edit_pic"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" >
+
+            <ImageView
+                android:id="@+id/iv_select_pic"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/open_picture"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/tv_select_pic_tips"
+                style="@style/tipstheme_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:gravity="center"
+                android:text="添加图片" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_take_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/view_helper"
+            android:background="@drawable/selector_edit_pic"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" >
+
+            <ImageView
+                android:id="@+id/iv_take_pic"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/take_picture"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/tv_take_pic_tips"
+                style="@style/tipstheme_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:gravity="center"
+                android:text="拍照添加" />
+        </LinearLayout>
+    </RelativeLayout>
+   </RelativeLayout>
+</LinearLayout>

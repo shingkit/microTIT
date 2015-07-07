@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <com.gyxy.sns.ui.widget.SwipeBackLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipeback"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" > </com.gyxy.sns.ui.widget.SwipeBackLayout>-->
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <include layout="@layout/toolbar" />
+
+        <com.gyxy.sns.ui.widget.LineTabIndicator
+            android:id="@+id/tabindicator"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+

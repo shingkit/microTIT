@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="menu_req_admin" type="id"/>
+    <item name="menu_req_super_admin" type="id"/>
+    <item name="menu_item_set_top" type="id"></item>
+    <item name="menu_item_cancel_top" type="id"></item>
+    <item name="menu_item_set_jp" type="id"></item>
+    <item name="menu_item_cancel_jp" type="id"></item>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+<PreferenceCategory 
+    android:order="9"
+    android:title="@string/app_about"
+    >
+    <Preference
+        android:defaultValue="1.0"
+        android:key="version"
+        android:order="10"
+        android:title="@string/version" />
+    <Preference
+        android:key="about"
+        android:order="9"
+        android:title="@string/about" />
+</PreferenceCategory>
+    <PreferenceCategory
+        android:order="0"
+        android:title="@string/color" >
+        <Preference
+            android:defaultValue="@color/BLUE_TIT"
+            android:key="color"
+            android:order="0"
+            android:title="@string/color" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:order="1"
+        android:title="@string/notifyType" >
+        <SwitchPreference
+            android:key="sound"
+            android:defaultValue="true"
+            android:title="@string/sound" />
+        <SwitchPreference
+            android:key="viberate"
+            android:defaultValue="true"
+            android:title="@string/vibrate" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

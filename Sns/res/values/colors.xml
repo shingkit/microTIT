@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="BLUE_TIT">#024dff</color>
+    <color name="colorPrimary">#0355fd</color>
+    <color name="gray">#99999999</color>
+    <color name="swipe_color_1">#B6DB49</color>
+    <color name="swipe_color_2">#99CC00</color>
+    <color name="swipe_color_3">#8ABD00</color>
+    <color name="swipe_color_4">#7CAF00</color>
+    <color name="navdrawer_background">#ffffffff</color>
+    <color name="session_photo_scrim">#66666666</color>
+    <color name="body_text_2_inverse">#8affffff</color>
+   <!--  <color name="black_p50">#7f000000</color> -->
+<color name="black_p50">#ffffff</color>
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.gc.materialdesign.views.ButtonFloat
+        android:id="@+id/btn_new_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"   
+        android:background="#1E88E5" 
+        app:iconDrawable="@drawable/ic_post" >
+    </com.gc.materialdesign.views.ButtonFloat>
+
+    <com.gc.materialdesign.views.ButtonFloat
+        android:id="@+id/btn_previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="8dp"
+        android:background="#1E88E5" 
+        app:iconDrawable="@drawable/ic_previous" >
+    </com.gc.materialdesign.views.ButtonFloat>
+
+    <com.gc.materialdesign.views.ButtonFloat
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="8dp"
+        android:background="#1E88E5" 
+        app:iconDrawable="@drawable/ic_next" >
+    </com.gc.materialdesign.views.ButtonFloat>
+
+</LinearLayout>

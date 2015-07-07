@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/toolbar" />
+
+        <EditText
+            android:id="@+id/et_vip_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入想要认证的身份"
+            android:textColor="@android:color/black" />
+        <EditText
+            android:id="@+id/et_real_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入真实姓名"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="提示:需要提交一张能证明申请身份的图片" />
+
+        <ImageView
+            android:id="@+id/iv_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_add_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击提交图片" />
+
+        <Button
+            android:id="@+id/btn_apply"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="申请认证"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</ScrollView>

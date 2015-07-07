@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="65dp"
+        android:paddingBottom="5.0dip"
+        android:paddingTop="5.0dip" >
+
+        <com.gyxy.sns.ui.widget.BezelImageView
+            android:id="@+id/biv_head"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/person_image_empty"
+            app:maskDrawable="@drawable/circle_mask" />
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="25.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="58.0dip"
+            android:layout_toRightOf="@id/biv_head"
+            android:ellipsize="end"
+            android:gravity="left|center"
+            android:singleLine="true"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tv_recent_msg"
+            android:layout_width="fill_parent"
+            android:layout_height="35.0dip"
+            android:layout_below="@id/tv_username"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="35.0dip"
+            android:layout_toRightOf="@id/biv_head"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:paddingLeft="6.0dip"
+            android:paddingRight="6.0dip"
+            android:singleLine="true"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15.0sp" />
+
+        <TextView
+            android:id="@+id/tv_recent_time"
+            android:layout_width="wrap_content"
+            android:layout_height="25.0dip"
+            android:layout_above="@id/tv_recent_msg"
+            android:layout_alignParentRight="true"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_marginRight="10dip"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:padding="0.0dip"
+            android:singleLine="true"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="10.0sp" />
+
+        <TextView
+            android:id="@+id/tv_recent_unread"
+            android:layout_width="16dip"
+            android:layout_height="16.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_recent_time"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="5.0dip"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="10.0dip" />
+    </RelativeLayout>
+
+</RelativeLayout>

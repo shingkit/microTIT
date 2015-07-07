@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/et_title"
+        android:hint="@string/title"
+        android:textColor="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" >
+ 
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_content"
+        android:hint="@string/content"
+        android:textColor="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="3"
+        android:gravity="top"
+        android:ems="10" />
+    
+    <Button 
+        android:id="@+id/btn_push"
+        android:text="@string/push"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"/>
+
+</LinearLayout>
